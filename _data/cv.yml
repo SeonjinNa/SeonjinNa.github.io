@@ -130,6 +130,7 @@
   contents:
     - title: Reviewer 
       items:
+        - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2026
         - General Purpose Processing on Graphics Processing Units (GPGPU) 2025
         - IEEE International Parallel & Distributed Processing Symposium (IPDPS) 2025
         - ACM Transactions on Computer Systems (TOCS) 2024
@@ -139,12 +140,17 @@
         - IEEE Computer Architecture Letter (CAL) 2023.
     - title: Technical Program Committee 
       items:
+        - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2026
         - General Purpose Processing on Graphics Processing Units (GPGPU) 2025
         - IEEE International Parallel & Distributed Processing Symposium (IPDPS) 2025
         - International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) 2024
+    - title: Workshop/Tutorial Chair
+      items:
+        - IEEE International Symposium on Workload Characterization (IISWC) 2025
     - title: Travel Grant Chair
       items:
         - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2025
+      
     - title: Artifact Evaluation Committee
       items:
         - ACM European Conference on Computer Systems (EuroSys) 2025
