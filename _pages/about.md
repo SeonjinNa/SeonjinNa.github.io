@@ -8,9 +8,8 @@ profile:
   align: right
   image: sjna_paris.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-   Email <a href="mailto:sjna@casys.kaist.ac.kr"><i class="fas fa-envelope""></i></a><br>
-   Curriculum Vitae <a href="assets/pdf/sjna_cv.pdf"><i class="ai ai-cv"></i></a>
+  more_info: >
+   <p> Email: seonjin.na at gatech.edu
 
 
 news: true # includes a list of news items
