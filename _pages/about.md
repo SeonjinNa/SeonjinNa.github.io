@@ -26,4 +26,4 @@ Currently, I am actively engaged in extending my research field to address vario
 
 Research Interest (Keyword): GPU/NPU Architecture, Secure Architecture for GPU/NPU, Systems for Machine Learning.
 
-> <p style="color: #0076df;"><strong>I am currently looking for full-time job opportunities in industry.</strong></p>
+<!-- > <p style="color: #0076df;"><strong>I am currently looking for full-time job opportunities in industry.</strong></p> -->
