@@ -9,7 +9,6 @@ profile:
   image: sjna_paris.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-   <p> Email: seonjin.na at gatech.edu
 
 
 news: true # includes a list of news items
