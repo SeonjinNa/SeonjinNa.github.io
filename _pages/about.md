@@ -14,8 +14,6 @@ profile:
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 simple_news: false
-# awards: true
-# patent: true
 social: true  # includes social icons at the bottom of the page
 ---
 
