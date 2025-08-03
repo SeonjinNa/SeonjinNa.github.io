@@ -12,6 +12,7 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "_bibliography/**"  # add publication
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
