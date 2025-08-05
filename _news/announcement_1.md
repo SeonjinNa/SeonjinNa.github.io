@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Our paper, <strong>Common Counters: Compressed Encryption Counters for Secure GPU Memory</strong>, has been accepted at <strong><a href="https://hpca-conf.org/2021/">HPCA 2021</a></strong>.
+Our paper, <strong>Common Counters: Compressed Encryption Counters for Secure GPU Memory</strong>, has been accepted to <strong><a href="https://hpca-conf.org/2021/">HPCA 2021</a></strong>.
 
 
