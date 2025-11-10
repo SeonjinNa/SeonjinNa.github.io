@@ -6,11 +6,11 @@
     # - name: Date of Birth
     #   value: 2th March 1879
     - name: Affiliation
-      value: Georgia Institute of Technology (Georgia Tech)
+      value: NVIDIA
     - name: Position
-      value: Postdoctoral Fellow 
-    - name: Supervisor
-      value: Hyesoon Kim
+      value: Senior High Performance AI Engineer
+    # - name: Supervisor
+    #   value: Hyesoon Kim
     # - name: Languages
     #   value: English, German
 
@@ -47,6 +47,10 @@
   # type: time_table
   type: nested_list 
   contents:
+    - title: Senior High Performance AI Engineer
+      items:
+        - "NVIDIA ,Santa Clara, US"        
+        - "2025. 11 - Present"
     - title: Postdoctoral Fellow 
       items:
       # institution: Georgia Institute of Technology 
@@ -54,7 +58,7 @@
       # description:
         - "Georgia Instittue of Technology"
         - "Supervisor: Hyesoon Kim"
-        - "2023.6 - Present"
+        - "2023.6 - 2025. 10"
       #   - title: Description 3.
       #     contents:
       #       - Sub-description 1.
