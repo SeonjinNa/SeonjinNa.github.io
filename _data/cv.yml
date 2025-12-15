@@ -138,6 +138,8 @@
   contents:
     - title: Reviewer 
       items:
+        - International Symposium on Computer Architecture (ISCA) 2026
+        - Conference on Machine Learning and Systems (MLSys) 2026
         - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2026
         - General Purpose Processing on Graphics Processing Units (GPGPU) 2025
         - IEEE International Parallel & Distributed Processing Symposium (IPDPS) 2025
@@ -149,6 +151,8 @@
         - IEEE Computer Architecture Letter (CAL) 2023,2025.
     - title: Technical Program Committee 
       items:
+        - International Symposium on Computer Architecture (ISCA) 2026 
+        - Conference on Machine Learning and Systems (MLSys) 2026
         - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2026
         - General Purpose Processing on Graphics Processing Units (GPGPU) 2025
         - IEEE International Parallel & Distributed Processing Symposium (IPDPS) 2025
