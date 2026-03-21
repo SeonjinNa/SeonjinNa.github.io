@@ -13,6 +13,7 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
+academic_services: true # includes academic services section
 simple_news: false
 social: true  # includes social icons at the bottom of the page
 ---
@@ -34,6 +35,6 @@ My research interests lie in GPU architecture, trusted computing, heterogeneous 
 
 
 
-Research Interest (Keyword): GPU/NPU Architecture, Secure Architecture for GPU/NPU, Systems for Machine Learning.
+Research Interest (Keyword): GPU/NPU Architecture, Systems for Machine Learning, Secure Architecture for GPU/NPU.
 
 <!-- > <p style="color: #0076df;"><strong>I am currently looking for full-time job opportunities in industry.</strong></p> -->

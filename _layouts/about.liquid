@@ -73,7 +73,7 @@ layout: default
             <br>
             06/2023 - 10/2025 
             <br>
-            Postdoctral Fellow
+            Postdoctoral Fellow
             <br>
             Worked with <a href="https://hyesoon.github.io/">Hyesoon Kim</a>
             <br>
@@ -105,7 +105,7 @@ layout: default
           <p class="text">
             <b>KAIST</b>
             <br>
-            03/2018- 02/2023
+            03/2018 - 02/2023
             <br>
             Graduate Research Assistant
             <br>
@@ -217,10 +217,68 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
+      <h2 style="margin-top: 2rem;">
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Academic Services -->
+    {% if page.academic_services %}
+      <h2 style="margin-top: 2rem;">Academic Services</h2>
+      <div class="academic-services">
+
+        <h4>Technical Program Committee</h4>
+        <ul>
+          <li><strong>2026</strong>
+            <ul>
+              <li>IEEE/ACM International Symposium on Microarchitecture (<strong>MICRO</strong>)</li>
+              <li>IEEE International Symposium on Workload Characterization (<strong>IISWC</strong>)</li>
+              <li>International Symposium on Computer Architecture (<strong>ISCA</strong>)</li>
+              <li>Conference on Machine Learning and Systems (<strong>MLSys</strong>)</li>
+              <li>International Conference on Architectural Support for Programming Languages and Operating Systems (<strong>ASPLOS</strong>)</li>
+            </ul>
+          </li>
+          <li><strong>2025</strong>
+            <ul>
+              <li>General Purpose Processing on Graphics Processing Units (<strong>GPGPU</strong>)</li>
+              <li>IEEE International Parallel &amp; Distributed Processing Symposium (<strong>IPDPS</strong>)</li>
+            </ul>
+          </li>
+          <li><strong>2024</strong>
+            <ul>
+              <li>International Conference for High Performance Computing, Networking, Storage, and Analysis (<strong>SC</strong>)</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>Journal Reviewer</h4>
+        <ul>
+          <li>ACM Transactions on Computer Systems (<strong>TOCS</strong>) 2024, 2025</li>
+          <li>ACM Transactions on Architecture and Code Optimization (<strong>TACO</strong>) 2024, 2025</li>
+          <li>IEEE Micro 2025, 2026</li>
+          <li>IEEE Transactions on Dependable and Secure Computing (<strong>TDSC</strong>) 2023</li>
+          <li>IEEE Computer Architecture Letters (<strong>CAL</strong>) 2023, 2025, 2026</li>
+        </ul>
+
+        <h4>Artifact Evaluation Committee</h4>
+        <ul>
+          <li>IEEE/ACM International Symposium on Microarchitecture (<strong>MICRO</strong>) 2024, 2025</li>
+          <li>ACM European Conference on Computer Systems (<strong>EuroSys</strong>) 2025</li>
+          <li>International Conference on Architectural Support for Programming Languages and Operating Systems (<strong>ASPLOS</strong>) 2025</li>
+          <li>USENIX Annual Technical Conference (<strong>ATC</strong>) 2024</li>
+          <li>USENIX Symposium on Operating Systems Design and Implementation (<strong>OSDI</strong>) 2024</li>
+          <li>International Symposium on Computer Architecture (<strong>ISCA</strong>) 2024</li>
+        </ul>
+
+        <h4>Organizing Committee</h4>
+        <ul>
+          <li>Workshop/Tutorial Chair: IEEE International Symposium on Workload Characterization (<strong>IISWC</strong>) 2025</li>
+          <li>Travel Grant Chair: International Conference on Architectural Support for Programming Languages and Operating Systems (<strong>ASPLOS</strong>) 2025</li>
+          <li>Web Chair: IEEE Computer Society <strong>TCuARCH</strong></li>
+        </ul>
+
+      </div>
     {% endif %}
 
     <!-- Social -->
