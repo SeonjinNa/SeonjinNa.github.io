@@ -32,14 +32,14 @@
       # institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2018
       description:
-        - "M.S in Computer Science"
+        - "M.S. in Computer Science"
         - "Advisor: Jaehyuk Huh"
         # - Description 2.
     - title: Sogang University
       # institution: Sogang University 
       year: 2016
       description:
-        - "B.S in Computer Science and Engineering"
+        - "B.S. in Computer Science and Engineering"
         - "Summa Cum Laude"
         # - Description 2.
 
@@ -49,14 +49,14 @@
   contents:
     - title: Senior High Performance AI Engineer
       items:
-        - "NVIDIA ,Santa Clara, US"        
+        - "NVIDIA, Santa Clara, US"        
         - "2025. 11 - Present"
     - title: Postdoctoral Fellow 
       items:
       # institution: Georgia Institute of Technology 
       # year: 2023 
       # description:
-        - "Georgia Instittue of Technology"
+        - "Georgia Institute of Technology"
         - "Supervisor: Hyesoon Kim"
         - "2023.6 - 2025. 10"
       #   - title: Description 3.
@@ -100,14 +100,14 @@
       year: 2025
       description:
         - Postdoctoral researcher for outstanding research in College of Computing at Georgia Tech.
-    - title: MICRO Ph.D Forum 
+    - title: MICRO Ph.D. Forum
       year: 2024      
     - title: Best Paper Award
       year: 2022
       description:
-        - "3th place, TNPU: Supporting Trusted Execution with Tree-less Integrity Protection for Neural Processing Unit"
+        - "3rd place, TNPU: Supporting Trusted Execution with Tree-less Integrity Protection for Neural Processing Unit"
         - "KAIST-Samsung Electronics Industry-Academic Exchange"
-    - title: National FUll Graduate Scholarship
+    - title: National Full Graduate Scholarship
       year: 2016 - 2023
       description:
         - "KAIST"
@@ -136,27 +136,23 @@
 - title: Academic Services
   type: nested_list
   contents:
-    - title: Reviewer 
+    - title: Technical Program Committee
       items:
+        - IEEE/ACM International Symposium on Microarchitecture (MICRO) 2026
+        - IEEE International Symposium on Workload Characterization (IISWC) 2026
         - International Symposium on Computer Architecture (ISCA) 2026
         - Conference on Machine Learning and Systems (MLSys) 2026
         - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2026
         - General Purpose Processing on Graphics Processing Units (GPGPU) 2025
         - IEEE International Parallel & Distributed Processing Symposium (IPDPS) 2025
         - International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) 2024
-        - ACM Transactions on Computer Systems (TOCS) 2024,2025
-        - ACM Transactions on Architecture and Code Optimization (TACO) 2024,2025
-        - IEEE Micro 2025.
-        - IEEE Transactions on Dependable and Secure Computing (TDSC) 2023.
-        - IEEE Computer Architecture Letter (CAL) 2023,2025.
-    - title: Technical Program Committee 
+    - title: Journal Reviewer
       items:
-        - International Symposium on Computer Architecture (ISCA) 2026 
-        - Conference on Machine Learning and Systems (MLSys) 2026
-        - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2026
-        - General Purpose Processing on Graphics Processing Units (GPGPU) 2025
-        - IEEE International Parallel & Distributed Processing Symposium (IPDPS) 2025
-        - International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) 2024
+        - ACM Transactions on Computer Systems (TOCS) 2024, 2025
+        - ACM Transactions on Architecture and Code Optimization (TACO) 2024, 2025
+        - IEEE Micro 2025, 2026
+        - IEEE Transactions on Dependable and Secure Computing (TDSC) 2023
+        - IEEE Computer Architecture Letters (CAL) 2023, 2025, 2026
     - title: Workshop/Tutorial Chair
       items:
         - IEEE International Symposium on Workload Characterization (IISWC) 2025
