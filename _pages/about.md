@@ -24,17 +24,17 @@ My research interests lie in GPU architecture, trusted computing, heterogeneous 
 Currently, I am actively engaged in extending my research field to address various challenges in the multi-GPU architecture, hardware security, and accelerating large language models (LLMs). -->
 
 
-I'm a **Senior High Performance AI Engineer** at [NVIDIA](https://www.nvidia.com/en-us/), accelerating AI workloads on NVIDIA GPUs through GPU architecture and full-stack software optimization. I focus on accelerating distributed AI training/inference for LLMs and multi-modal models through GPU-centric runtimes and system-level solutions.  
+I'm a **Senior High Performance AI Engineer** at [NVIDIA](https://www.nvidia.com/en-us/), working on GPU architecture and full-stack software optimization for AI workloads. I focus on accelerating distributed AI training and inference for LLMs and multimodal models through GPU-centric runtimes and system-level solutions.
 
 Prior to joining NVIDIA, I was a Postdoctoral Fellow in the [HPArch Group](https://sites.gatech.edu/hparch/) at [Georgia Institute of Technology](https://www.cc.gatech.edu/), supervised by Prof. [Hyesoon Kim](https://hyesoon.github.io/). I received my Ph.D. from the School of Computing at [KAIST](https://cs.kaist.ac.kr/) in 2023, advised by Prof. [Jaehyuk Huh](https://jaehyuk-huh.github.io/index.html).
 
-My research interests lie in GPU architecture, trusted computing, heterogeneous systems, distributed computing, and systems for machine learning. During my Ph.D., I focused on building secure architectures to provide trusted execution environments (TEE) on accelerators such as GPUs and NPUs with minimal performance overhead. Currently, I am actively engaged in expanding my research to address various challenges in multi-GPU architecture, hardware security, and accelerating large language models (LLMs).
+My research interests include GPU architecture, trusted computing, heterogeneous systems, distributed computing, and systems for machine learning. During my Ph.D., I focused on building secure architectures that provide trusted execution environments (TEEs) for accelerators such as GPUs and NPUs with minimal performance overhead. Currently, I am expanding my research toward challenges in multi-GPU architecture, hardware security, and large language model (LLM) acceleration.
 
 <!-- 
 My research interests lie in GPU architecture, trusted computing, heterogeneous systems, distributed computing, and systems for machine learning. During my Ph.D. studies, I focused on building secure architectures to provide a trusted execution environment (TEE) on accelerators such as GPUs and NPUs with minimal performance overhead. Currently, I am actively engaged in expanding my research to address various challenges in multi-GPU architecture, hardware security, and accelerating large language models (LLMs). -->
 
 
 
-Research Interest (Keyword): GPU/NPU Architecture, Systems for Machine Learning, Secure Architecture for GPU/NPU.
+Research Interests (Keywords): GPU/NPU Architecture, Systems for Machine Learning, Secure Architecture for GPUs/NPUs.
 
 <!-- > <p style="color: #0076df;"><strong>I am currently looking for full-time job opportunities in industry.</strong></p> -->

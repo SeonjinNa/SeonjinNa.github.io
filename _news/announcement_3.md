@@ -5,6 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Our paper, <strong>Tunable Memory Protection for Secure NPUs </strong>, has been accepted to <strong><a href="https://iccd-conf.com/2022/Home.html">ICCD 2022</a></strong>.
-
+Our paper <strong>Tunable Memory Protection for Secure NPUs</strong> has been accepted to <strong><a href="https://iccd-conf.com/2022/Home.html">ICCD 2022</a></strong>.
 
