@@ -1,11 +1,12 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV 
+title: CV
 nav: true
 nav_order: 5
-cv_pdf: Seonjin_CV.pdf
-description: 
+cv_pdf: /assets/pdf/Seonjin_CV.pdf
+cv_format: rendercv
+description:
 toc:
   sidebar: left
 ---

@@ -1,179 +1,74 @@
-- title: Current Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Seonjin Na 
-    # - name: Date of Birth
-    #   value: 2th March 1879
-    - name: Affiliation
-      value: NVIDIA
-    - name: Position
-      value: Senior High Performance AI Engineer
-    # - name: Supervisor
-    #   value: Hyesoon Kim
-    # - name: Languages
-    #   value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: Korea Advanced Institute of Science and Technology (KAIST)
-      # institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: 2023
-      description:
-        - "Ph.D. in Computer Science"
-        - "Advisor: Jaehyuk Huh"
-        # - Description 2.
-        # - title: Description 3.
-        #   contents:
-        #     - Sub-description 1.
-        #     - Sub-description 2.
-    - title: Korea Advanced Institute of Science and Technology (KAIST)
-      # institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: 2018
-      description:
-        - "M.S. in Computer Science"
-        - "Advisor: Jaehyuk Huh"
-        # - Description 2.
-    - title: Sogang University
-      # institution: Sogang University 
-      year: 2016
-      description:
-        - "B.S. in Computer Science and Engineering"
-        - "Summa Cum Laude"
-        # - Description 2.
-
-- title: Working Experiences
-  # type: time_table
-  type: nested_list 
-  contents:
-    - title: Senior High Performance AI Engineer
-      items:
-        - "NVIDIA, Santa Clara, US"        
-        - "2025. 11 - Present"
-    - title: Postdoctoral Fellow 
-      items:
-      # institution: Georgia Institute of Technology 
-      # year: 2023 
-      # description:
-        - "Georgia Institute of Technology"
-        - "Supervisor: Hyesoon Kim"
-        - "2023.6 - 2025. 10"
-      #   - title: Description 3.
-      #     contents:
-      #       - Sub-description 1.
-      #       - Sub-description 2.
-    - title: Research Intern
-      # institution: Microsoft Research, Beijing, China
-      # year: 2019.3 - 2019.6
-      # description:
-      items:
-        - "Microsoft Research, Beijing, China"
-        - "Mentor: Lintao Zhang, Yunxin Liu"
-        - "2019.03 - 2019.06"
-        # - Description 2.
-
-    # - title: Director
-    #   institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-    #   year: 1917-1933
-
-    # - title: Professor of Theoretical Physics
-    #   institution: Karl-Ferdinand University, Prague, Czechoslovakia
-    #   year: 1911 - 1917
-    #   description:
-
-    # - title: Associate Professor of Theoretical Physics
-    #   institution: University of Zurich, Zurich, Switzerland
-    #   year: 1909 - 1911
-
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - title: CoC Outstanding Post-Doctoral Research Award
-      year: 2025
-      description:
-        - Postdoctoral researcher for outstanding research in College of Computing at Georgia Tech.
-    - title: MICRO Ph.D. Forum
-      year: 2024      
-    - title: Best Paper Award
-      year: 2022
-      description:
-        - "3rd place, TNPU: Supporting Trusted Execution with Tree-less Integrity Protection for Neural Processing Unit"
-        - "KAIST-Samsung Electronics Industry-Academic Exchange"
-    - title: National Full Graduate Scholarship
-      year: 2016 - 2023
-      description:
-        - "KAIST"
-    - title: Summa Cum Laude
-      year: 2016
-      description:
-        - "Sogang University"
-    - title: Gold Prize
-      year: 2015
-      description:
-        - "The 2015 ACM-ICPC Asia Daejeon Regional Contest 4th place"
-    - title: Honorable Mention
-      year: 2013
-      description:
-        - "The 2013 ACM-ICPC Asia Daejeon Regional Contest 13th place"
-    - title: Academic Scholarship
-      year: 2012 - 2015
-      description:
-        - "Sogang University"
-
-
-
-      # items:
-        # - Max Planck Medal
-
-- title: Academic Services
-  type: nested_list
-  contents:
-    - title: Technical Program Committee
-      items:
-        - IEEE/ACM International Symposium on Microarchitecture (MICRO) 2026
-        - IEEE International Symposium on Workload Characterization (IISWC) 2026
-        - International Symposium on Computer Architecture (ISCA) 2026
-        - Conference on Machine Learning and Systems (MLSys) 2026
-        - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2026
-        - General Purpose Processing on Graphics Processing Units (GPGPU) 2025
-        - IEEE International Parallel & Distributed Processing Symposium (IPDPS) 2025
-        - International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) 2024
-    - title: Journal Reviewer
-      items:
-        - ACM Transactions on Computer Systems (TOCS) 2024, 2025
-        - ACM Transactions on Architecture and Code Optimization (TACO) 2024, 2025
-        - IEEE Micro 2025, 2026
-        - IEEE Transactions on Dependable and Secure Computing (TDSC) 2023
-        - IEEE Computer Architecture Letters (CAL) 2023, 2025, 2026
-    - title: Workshop/Tutorial Chair
-      items:
-        - IEEE International Symposium on Workload Characterization (IISWC) 2025
-    - title: Travel Grant Chair
-      items:
-        - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2025
-      
-    - title: Artifact Evaluation Committee
-      items:
-        - IEEE/ACM International Symposium on Microarchitecture (MICRO) 2025
-        - ACM European Conference on Computer Systems (EuroSys) 2025
-        - International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2025
-        - IEEE/ACM International Symposium on Microarchitecture (MICRO) 2024
-        - USENIX Annual Technical Conference (ATC) 2024
-        - USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2024
-        - International Symposium on Computer Architecture (ISCA) 2024
-    - title: Web Chair
-      items:
-        - IEEE Computer Society TCuARCH
-
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+cv:
+  sections:
+    Current Information:
+      - label: Full Name
+        details: Seonjin Na
+      - label: Affiliation
+        details: NVIDIA
+      - label: Position
+        details: Senior High Performance AI Engineer
+    Education:
+      - institution: Korea Advanced Institute of Science and Technology (KAIST)
+        date: "2023"
+        highlights:
+          - Ph.D. in Computer Science
+          - "Advisor: Jaehyuk Huh"
+      - institution: Korea Advanced Institute of Science and Technology (KAIST)
+        date: "2018"
+        highlights:
+          - M.S. in Computer Science
+          - "Advisor: Jaehyuk Huh"
+      - institution: Sogang University
+        date: "2016"
+        highlights:
+          - B.S. in Computer Science and Engineering
+          - Summa Cum Laude
+    Working Experiences:
+      - bullet: "**Senior High Performance AI Engineer**\n\n- NVIDIA, Santa Clara, US\n- 2025\\. 11 - Present"
+      - bullet: "**Postdoctoral Fellow**\n\n- Georgia Institute of Technology\n- Supervisor: Hyesoon Kim\n- 2023.6 - 2025. 10"
+      - bullet: "**Research Intern**\n\n- Microsoft Research, Beijing, China\n- Mentor: Lintao Zhang, Yunxin Liu\n- 2019.03 - 2019.06"
+    Honors and Awards:
+      - title: CoC Outstanding Post-Doctoral Research Award
+        date: "2025"
+        summary: "- Postdoctoral researcher for outstanding research in College of Computing at Georgia Tech."
+      - title: MICRO Ph.D. Forum
+        date: "2024"
+      - title: Best Paper Award
+        date: "2022"
+        summary:
+          "- 3rd place, TNPU: Supporting Trusted Execution with Tree-less Integrity Protection for Neural Processing Unit\n- KAIST-Samsung Electronics
+          Industry-Academic Exchange"
+      - title: National Full Graduate Scholarship
+        date: 2016 – 2023
+        summary: "- KAIST"
+      - title: Summa Cum Laude
+        date: "2016"
+        summary: "- Sogang University"
+      - title: Gold Prize
+        date: "2015"
+        summary: "- The 2015 ACM-ICPC Asia Daejeon Regional Contest 4th place"
+      - title: Honorable Mention
+        date: "2013"
+        summary: "- The 2013 ACM-ICPC Asia Daejeon Regional Contest 13th place"
+      - title: Academic Scholarship
+        date: 2012 – 2015
+        summary: "- Sogang University"
+    Academic Services:
+      - bullet:
+          "**Technical Program Committee**\n\n- IEEE/ACM International Symposium on Microarchitecture (MICRO) 2026\n- IEEE International Symposium on
+          Workload Characterization (IISWC) 2026\n- International Symposium on Computer Architecture (ISCA) 2026\n- Conference on Machine Learning and Systems
+          (MLSys) 2026\n- International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2026\n- General Purpose
+          Processing on Graphics Processing Units (GPGPU) 2025\n- IEEE International Parallel & Distributed Processing Symposium (IPDPS) 2025\n- International
+          Conference for High Performance Computing, Networking, Storage, and Analysis (SC) 2024"
+      - bullet:
+          "**Journal Reviewer**\n\n- ACM Transactions on Computer Systems (TOCS) 2024, 2025\n- ACM Transactions on Architecture and Code Optimization
+          (TACO) 2024, 2025\n- IEEE Micro 2025, 2026\n- IEEE Transactions on Dependable and Secure Computing (TDSC) 2023\n- IEEE Computer Architecture Letters
+          (CAL) 2023, 2025, 2026"
+      - bullet: "**Workshop/Tutorial Chair**\n\n- IEEE International Symposium on Workload Characterization (IISWC) 2025"
+      - bullet: "**Travel Grant Chair**\n\n- International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2025"
+      - bullet:
+          "**Artifact Evaluation Committee**\n\n- IEEE/ACM International Symposium on Microarchitecture (MICRO) 2025\n- ACM European Conference on Computer
+          Systems (EuroSys) 2025\n- International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2025\n- IEEE/ACM
+          International Symposium on Microarchitecture (MICRO) 2024\n- USENIX Annual Technical Conference (ATC) 2024\n- USENIX Symposium on Operating Systems
+          Design and Implementation (OSDI) 2024\n- International Symposium on Computer Architecture (ISCA) 2024"
+      - bullet: "**Web Chair**\n\n- IEEE Computer Society TCuARCH"

@@ -7,12 +7,18 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "test/site/**"
+      - "package.json"
+      - "package-lock.json"
+      - "**.bib"
       - "**.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
-      - "_bibliography/**"  # add publication
+      - "Gemfile"
+      - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -21,10 +27,10 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
-      - "!CONTRIBUTING.md"
-      - "!CUSTOMIZE.md"
-      - "!FAQ.md"
-      - "!INSTALL.md"
+      - "!docs/CONTRIBUTING.md"
+      - "!docs/CUSTOMIZE.md"
+      - "!docs/FAQ.md"
+      - "!docs/INSTALL.md"
       - "!README.md"
   pull_request:
     branches:
@@ -32,11 +38,18 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "test/site/**"
+      - "package.json"
+      - "package-lock.json"
+      - "**.bib"
       - "**.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -45,10 +58,10 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
-      - "!CONTRIBUTING.md"
-      - "!CUSTOMIZE.md"
-      - "!FAQ.md"
-      - "!INSTALL.md"
+      - "!docs/CONTRIBUTING.md"
+      - "!docs/CUSTOMIZE.md"
+      - "!docs/FAQ.md"
+      - "!docs/INSTALL.md"
       - "!README.md"
   workflow_dispatch:
 
@@ -61,14 +74,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
-      - name: Setup Ruby
+        uses: actions/checkout@v7
+      - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.2"
+          ruby-version: "3.3.5"
           bundler-cache: true
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: "pip" # caching pip dependencies
+      - name: Setup Node 🧰
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: "npm"
+      - name: Install JS deps 📦
+        run: npm ci
       - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
+        uses: fjogeleit/yaml-update-action@dffe9a5223d84653c13374032382f6bb5de8e5ef # v0.17.0
         with:
           commitChange: false
           valueFile: "_config.yml"
@@ -77,13 +102,21 @@ jobs:
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade jupyter
+          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Verify migration contracts
+        run: |
+          bundle exec al-folio upgrade audit
+          bundle exec al-folio upgrade overrides audit --fail-on-stale
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+      - name: Test personal site
+        run: npm test
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4

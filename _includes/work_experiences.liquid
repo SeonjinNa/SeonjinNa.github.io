@@ -1,0 +1,20 @@
+<section class="work-experiences" aria-labelledby="work-experiences-title">
+  <h2 id="work-experiences-title">Work Experiences</h2>
+  <ul class="work-experiences-list">
+    {% for experience in site.data.work_experiences %}
+      <li class="work-experience">
+        <div class="work-experience-logo">
+          <img src="{{ experience.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ experience.organization | escape }} logo" loading="lazy">
+        </div>
+        <div class="work-experience-details">
+          <strong>{{ experience.organization }}</strong>
+          <div>{{ experience.dates }}</div>
+          <div>{{ experience.position }}</div>
+          {% for detail in experience.details %}
+            <div>{{ detail }}</div>
+          {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

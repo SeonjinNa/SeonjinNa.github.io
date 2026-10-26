@@ -1,0 +1,48 @@
+:root {
+  --global-theme-color: #0076df;
+  --global-hover-color: #0076df;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #2698ba;
+  --global-hover-color: #2698ba;
+}
+
+.work-experiences,
+.site-academic-services {
+  margin-top: 2rem;
+  clear: both;
+}
+
+.work-experiences-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+}
+
+.work-experience {
+  display: grid;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.work-experience-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 75px;
+  object-fit: contain;
+}
+
+.work-experience-details {
+  line-height: 1.6;
+}
+
+@media (max-width: 575px) {
+  .work-experience {
+    grid-template-columns: 85px minmax(0, 1fr);
+    gap: 1rem;
+  }
+}
