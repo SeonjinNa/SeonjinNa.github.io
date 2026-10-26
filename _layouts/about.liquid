@@ -25,13 +25,15 @@ layout: default
             {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
         {% endif %}
+    
+
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
@@ -40,18 +42,173 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    {% include work_experiences.liquid %}
+     <h2>Work Experiences</h2>
+      <div class="table publications"><ol class="bibliography">
+
+      <li><div class="row">
+        <div class="col-sm-3">
+          <img src="{{ '/assets/img/NVIDIA_logo.jpg' | relative_url }}" alt="NVIDIA Logo" class="img-fluid">
+        </div>
+        <div class="col-sm-8">
+          <p class="text">
+            <b>NVIDIA</b>
+            <br>
+            11/2025 - Present
+            <br>
+            Senior High Performance AI Engineer
+            <br>
+              HW-SW Co-Design for Efficient and Scalable AI Training/Inference
+            <br>
+          </p>
+        </div>
+      </div></li>
+
+      <li><div class="row">
+        <div class="col-sm-3">
+          <img src="{{ '/assets/img/gatech_logo.png' | relative_url }}" alt="Georgia Tech logo" class="img-fluid">
+        </div>
+        <div class="col-sm-8">
+          <p class="text">
+            <b>Georgia Institute of Technology (Georgia Tech)</b>
+            <br>
+            06/2023 - 10/2025 
+            <br>
+            Postdoctoral Fellow
+            <br>
+            Worked with <a href="https://hyesoon.github.io/">Hyesoon Kim</a>
+            <br>
+          </p>
+        </div>
+      </div></li>
+      <li><div class="row">
+        <div class="col-sm-3">
+          <img src="{{ '/assets/img/microsoft_logo.png' | relative_url }}" alt="Microsoft logo" class="img-fluid">
+        </div>
+        <div class="col-sm-8">
+          <p class="text">
+            <b>Microsoft Research</b>
+            <br>
+            03/2019 - 06/2019 
+            <br>
+            Research Intern
+            <br>
+            Mentors: Lintao Zhang and Yunxin Liu
+            <br>
+          </p>
+        </div>            
+      </div></li>
+        <li><div class="row">
+        <div class="col-sm-3">
+          <img src="{{ '/assets/img/kaist_logo.png' | relative_url }}" alt="KAIST logo" class="img-fluid">
+        </div>
+        <div class="col-sm-8">
+          <p class="text">
+            <b>KAIST</b>
+            <br>
+            03/2018 - 02/2023
+            <br>
+            Graduate Research Assistant
+            <br>
+            Advisor: <a href="https://jaehyuk-huh.github.io/">Jaehyuk Huh</a> 
+            <br>
+          </p>
+        </div>
+      </div></li>
+      </ol></div>
+
+     {% comment %}
+     <h2>Education</h2>
+      <div class="table publications"><ol class="bibliography">
+      <li><div class="row align-items-center">
+        <div class="col-sm-3">
+          <img src="{{ '/assets/img/kaist_logo.png' | relative_url }}" alt="KAIST logo" class="img-fluid">
+        </div>
+        <div class="col-sm-8">
+          <p class="text">
+            <b>KAIST</b>
+            <br>
+            03/2018 - 02/2023
+            <br>
+            Ph.D. in Computer Science
+            <br>
+            Advisor: <a href="https://jaehyuk-huh.github.io/">Jaehyuk Huh</a> 
+            <br>
+          </p>
+        </div>
+      </div></li>
+      <li><div class="row align-items-center">
+        <div class="col-sm-3">
+          <img src="{{ '/assets/img/kaist_logo.png' | relative_url }}" alt="KAIST logo" class="img-fluid">
+        </div>
+        <div class="col-sm-8">
+          <p class="text">
+            <b>KAIST</b>
+            <br>
+            03/2016 - 02/2018 
+            <br>
+            M.S. in Computer Science
+            <br>
+            Advisor: <a href="https://jaehyuk-huh.github.io/">Jaehyuk Huh</a> 
+            <br>
+          </p>
+        </div>            
+      </div></li>
+        <li><div class="row align-items-center">
+        <div class="col-sm-3">
+          <img src="{{ '/assets/img/sogang_logo.png' | relative_url }}" alt="Sogang University logo" class="img-fluid">
+        </div>
+        <div class="col-sm-8">
+          <p class="text">
+            <b>Sogang University</b>
+            <br>
+            03/2012- 02/2016
+            <br>
+            <strong>Summa Cum Laude</strong>
+            <br>
+          </p>
+        </div>
+      </div></li>
+      </ol></div>
+     {% endcomment %}
+
 
     <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
+    {% if page.news and site.announcements.enabled %}
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
+    {% if page.simple_news %}
+      <style>
+        .news-link {
+          text-decoration: none;
+          color: inherit;
+        }
+        .news-link:hover {
+          text-decoration: underline;
+        }
+      </style>
+
+      <!-- Fancy Divider with Clickable News -->
+      <div style="display: flex; align-items: center; margin: 20px 0 10px;">
+        <a
+          href="{{ '/simple_news/' | relative_url }}"
+          class="news-link"
+          style="font-size: 2.0em; margin-right: 10px;"
+          >News</a
+        >
+        <div style="flex-grow: 1; height: 1px; background-color: #ccc;"></div>
+      </div>
+
+      {% include simple_news.liquid limit=true %}
+    {% endif %}
+
+
+
     <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
+    {% if site.latest_posts.enabled %}
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
@@ -60,31 +217,67 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
+      <h2 style="margin-top: 2rem;">
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Academic Services -->
     {% if page.academic_services %}
-      {% include academic_services.liquid %}
+      <h2 style="margin-top: 2rem;">Academic Services</h2>
+      <div class="academic-services">
+
+        <h4>Technical Program Committee</h4>
+        <ul>
+          <li><strong>2026</strong>
+            <ul>
+              <li>IEEE/ACM International Symposium on Microarchitecture (<strong>MICRO</strong>)</li>
+              <li>IEEE International Symposium on Workload Characterization (<strong>IISWC</strong>)</li>
+              <li>International Symposium on Computer Architecture (<strong>ISCA</strong>)</li>
+              <li>Conference on Machine Learning and Systems (<strong>MLSys</strong>)</li>
+              <li>International Conference on Architectural Support for Programming Languages and Operating Systems (<strong>ASPLOS</strong>)</li>
+            </ul>
+          </li>
+          <li><strong>2025</strong>
+            <ul>
+              <li>General Purpose Processing on Graphics Processing Units (<strong>GPGPU</strong>)</li>
+              <li>IEEE International Parallel &amp; Distributed Processing Symposium (<strong>IPDPS</strong>)</li>
+            </ul>
+          </li>
+          <li><strong>2024</strong>
+            <ul>
+              <li>International Conference for High Performance Computing, Networking, Storage, and Analysis (<strong>SC</strong>)</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>Journal Reviewer</h4>
+        <ul>
+          <li>ACM Transactions on Computer Systems (<strong>TOCS</strong>) 2024, 2025</li>
+          <li>ACM Transactions on Architecture and Code Optimization (<strong>TACO</strong>) 2024, 2025</li>
+          <li>IEEE Micro 2025, 2026</li>
+          <li>IEEE Transactions on Dependable and Secure Computing (<strong>TDSC</strong>) 2023</li>
+          <li>IEEE Computer Architecture Letters (<strong>CAL</strong>) 2023, 2025, 2026</li>
+        </ul>
+
+        <h4>Organizing Committee</h4>
+        <ul>
+          <li>Workshop/Tutorial Chair: IEEE International Symposium on Workload Characterization (<strong>IISWC</strong>) 2025</li>
+          <li>Travel Grant Chair: International Conference on Architectural Support for Programming Languages and Operating Systems (<strong>ASPLOS</strong>) 2025</li>
+          <li>Web Chair: IEEE Computer Society <strong>TCuARCH</strong></li>
+        </ul>
+
+      </div>
     {% endif %}
 
     <!-- Social -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-icons">{% include social.liquid %}</div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% if site.plugins contains 'al_newsletter' %}
-        {% include plugins/al_newsletter_form_center_margin.liquid %}
-      {% else %}
-        {% include newsletter.liquid center=true %}
-      {% endif %}
     {% endif %}
   </article>
 </div>
