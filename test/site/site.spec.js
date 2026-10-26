@@ -101,3 +101,42 @@ test("color theme remains usable after navigation", async ({ page }) => {
   await page.goto("/publications/");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 });
+
+test("homepage news stays compact and older announcements remain scrollable", async ({ page }) => {
+  await page.goto("/");
+  const news = page.locator(".news .table-responsive");
+  for (const width of [1440, 390]) {
+    await page.setViewportSize({ width, height: 1000 });
+    const dimensions = await news.evaluate((element) => ({
+      height: element.clientHeight,
+      contentHeight: element.scrollHeight,
+      overflowY: getComputedStyle(element).overflowY,
+    }));
+    expect(dimensions.height).toBeLessThanOrEqual(400);
+    expect(dimensions.contentHeight).toBeGreaterThan(dimensions.height);
+    expect(dimensions.overflowY).toBe("auto");
+    await news.evaluate((element) => {
+      element.scrollTop = 0;
+    });
+    await news.hover();
+    await page.mouse.wheel(0, 450);
+    await expect.poll(() => news.evaluate((element) => element.scrollTop)).toBeGreaterThan(0);
+  }
+});
+
+test("CV entry wrappers have no markers while description bullets remain visible", async ({ page }) => {
+  await page.goto("/cv/");
+  const wrappers = page.locator(".cv ul.list-group > li.list-group-item");
+  expect(await wrappers.count()).toBeGreaterThan(0);
+  const wrapperStyles = await wrappers.evaluateAll((items) =>
+    items.map((item) => ({
+      marker: getComputedStyle(item).listStyleType,
+      display: getComputedStyle(item).display,
+    }))
+  );
+  expect(wrapperStyles.every((style) => style.marker === "none" || !style.display.includes("list-item"))).toBeTruthy();
+  const descriptions = page.locator(".cv li.list-group-item ul > li");
+  expect(await descriptions.count()).toBeGreaterThan(0);
+  const descriptionStyles = await descriptions.evaluateAll((items) => items.map((item) => getComputedStyle(item).listStyleType));
+  expect(descriptionStyles.every((style) => style !== "none")).toBeTruthy();
+});

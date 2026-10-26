@@ -40,6 +40,14 @@ html[data-theme="dark"] {
   line-height: 1.6;
 }
 
+.cv ul.list-group {
+  padding-left: 0;
+}
+
+.cv ul.list-group > li.list-group-item {
+  list-style: none;
+}
+
 @media (max-width: 575px) {
   .work-experience {
     grid-template-columns: 85px minmax(0, 1fr);

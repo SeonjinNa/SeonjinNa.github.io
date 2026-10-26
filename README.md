@@ -17,6 +17,7 @@ Open <http://localhost:4001/>. The browser checks use installed Google Chrome lo
 
 ```bash
 npm test
+bundle exec ruby test/site/style_cache_test.rb
 bundle exec al-folio upgrade audit
 bundle exec al-folio upgrade overrides audit --fail-on-stale
 ```
@@ -35,7 +36,9 @@ On Homebrew Python installations, if nbconvert cannot find its templates, build 
 - `_data/cv.yml`: CV sections in RenderCV-compatible YAML. The existing downloadable CV remains in `assets/pdf/Seonjin_CV.pdf`.
 - `_data/socials.yml`: contact and profile links.
 
-The local about layout adds Work Experiences and Academic Services to the current gem layout. The Sass entrypoint adds `_sass/_site.scss` for the blue/cyan palette and work history layout. `.al-folio-overrides.yml` records the upstream files reviewed for these overrides.
+The local about layout adds Work Experiences and Academic Services to the current gem layout. The news include keeps homepage announcements in a 400px scroll area. The Sass entrypoint adds `_sass/_site.scss` for the blue/cyan palette, work history layout, and CV list styling. `.al-folio-overrides.yml` records the upstream files reviewed for these overrides.
+
+The site cache filter extends the theme's stylesheet version with a digest of local Sass, so personal style updates reach browsers that cached the previous CSS.
 
 ## Theme updates and deployment
 
